@@ -24,7 +24,9 @@ Remove the human and every one of these solves nothing. An agent has no recovery
 
 What survives is the coordination underneath: a prioritized backlog, a definition of done, iterative delivery with feedback. What the agent actually needs is a work queue with quality-gated termination — items enter, get worked, and leave when they meet the bar. Done means done, not "sprint over." Continuous integration already runs on this logic at the level of commits; the sprint is the part of agile that never caught up with it.
 
-*Faster horse? A faster horse with a burndown chart.*
+The specimen already exists. There is a product on a major cloud marketplace that automates Scrum end-to-end with a team of specialized agents — a Standup Agent that captures updates, a Backlog Agent that prioritizes, a Planning Agent that balances workloads, a Retrospective Agent that extracts insights — and reports back into Jira and Teams. Every ceremony preserved. Every ceremony now performed by a system that has none of the limitations the ceremony was invented to manage. It is hard to imagine a purer example of the pattern this series is about, and it is for sale.
+
+*Faster horse? A faster horse with a burndown chart — now with the horse automated too.*
 
 ## Code review
 

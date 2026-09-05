@@ -10,7 +10,7 @@ Four of them: the relational database, email, documentation, and the layer benea
 
 ## The relational database
 
-Postgres is the wrong shape for AI. So is MySQL, Oracle, SQL Server, SQLite, and every relational database since Edgar Codd's 1970 paper introduced tables, rows, columns, and keys — with a mathematical foundation, relational algebra, that made query optimizers possible. The model is one of the great achievements of computing. It is also a particular answer to "how should information be organized for retrieval," and the answer was tuned for who was asking.
+Postgres is the wrong shape for AI. So is MySQL, Oracle, SQL Server, SQLite, and every relational database since Edgar Codd's [1970 paper](https://dl.acm.org/doi/10.1145/362384.362685) introduced tables, rows, columns, and keys — with a mathematical foundation, relational algebra, that made query optimizers possible. The model is one of the great achievements of computing. It is also a particular answer to "how should information be organized for retrieval," and the answer was tuned for who was asking.
 
 Tables are for human browsing; an agent doesn't browse. Schemas are declared before data exists because humans plan first and write second; an agent infers structure from examples and revises. Joins let humans compose questions across related tables; an agent asks "tell me about this customer" and traverses the relationships as part of the answer. B-tree indexes find the row where column X equals Y; an agent's question is "everything semantically related to this concept," which no key-based index answers.
 

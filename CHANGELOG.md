@@ -143,3 +143,27 @@ Wired in: Prometheus README (now six posts), Post 0's method section, Post
 4's closing line and nav; Comfortable Cage README and Part 5's end-of-series
 line both point to it. No claims in the capstone are new — every component
 is one already argued for in a prior post; the capstone only assembles them.
+
+## Update — a specimen for The Rituals
+
+Post 2's sprint section now cites a real product: a cloud-marketplace
+offering that automates Scrum ceremonies end-to-end with dedicated
+Standup, Backlog, Planning, and Retrospective agents reporting into Jira.
+It is the series' argument made literal — every ceremony preserved, now
+performed by a system with none of the limitations the ceremonies exist to
+manage — and it's described without vendor name or link, as a specimen
+rather than a target. The section's faster-horse line is updated to match.
+
+## Update — citation linked
+
+Codd's 1970 relational-model paper in Post 3 now links to the ACM Digital
+Library record. It is the only formal citation in this series; the
+historical dates (Tomlinson 1971, SMTP 1982, Agile Manifesto 2001, Git 2005,
+GitHub 2008, etc.) are common-knowledge facts rather than cited works.
+
+## Update — Leaving the Cage, Layer 4
+
+Layer 4 now cites PatchBoard (2026) and names its open question — how
+shared state is updated, authorized, and audited over long horizons — as
+the one the rendered-audit-trail design answers: update through the board,
+authorize through capabilities, audit through the rendered history.
