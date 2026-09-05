@@ -10,6 +10,8 @@ This post catalogs the tax across the stack — tool by tool, with concrete numb
 
 The numbers below assume current API pricing (~$5 per million input tokens, ~$15 per million output tokens). Adjust for your model and provider — the ratios are what matter, not the absolute dollars.
 
+**A caveat about methodology.** The numbers in this post are *illustrative, not measured*. They are derived from observed overhead patterns (PDFs really do carry 2-3× the tokens of equivalent plain text; email threads really do re-quote prior messages; JSON schemas really do inject hundreds of tokens per call) and from rough estimates of typical volume and tool mix. The *ratios* are roughly right; the *absolute dollars* should be treated as order-of-magnitude estimates, not budget figures. To convert this from illustrative to measured, instrument a real deployment and record actual token consumption per operation across the tool stack. That's the empirical work this post gestures at — and a critique correctly observed that the per-tool tables are where the overreach lives, while the compounded-task example is more defensible.
+
 ## Per-tool cost breakdown
 
 ### Databases — the relational model tax
@@ -132,9 +134,9 @@ This is the tax nobody optimizes because nobody measures it.
 
 ## Where the impact is greatest
 
-Ranked by total dollar impact in a typical enterprise AI deployment (1M agentic tasks/month, 10 tool calls/task, mixed inputs):
+Ranked by total dollar impact in a typical enterprise AI deployment (1M agentic tasks/month, 10 tool calls/task, mixed inputs). **These figures are illustrative** — see the methodology caveat at the top of this post.
 
-| Rank | Tool | Estimated annual cost of tax |
+| Rank | Tool | Illustrative annual cost of tax |
 |---|---|---|
 | 1 | File system / network / auth (the invisible layer) | $300K-800K |
 | 2 | Email (volume + high overhead) | $100K-400K |
@@ -145,7 +147,7 @@ Ranked by total dollar impact in a typical enterprise AI deployment (1M agentic 
 | 7 | Databases | $20K-80K |
 | 8 | Git ceremony | $10K-30K |
 
-**Total estimated translation tax: $660K-2.06M per year** for a mid-scale deployment. The actual cost depends on volume, model pricing, and the specific mix of tools used.
+**Total illustrative translation tax: $660K-2.06M per year** for a mid-scale deployment. The actual cost depends on volume, model pricing, and the specific mix of tools used.
 
 For a large enterprise deployment (10× volume), the numbers scale roughly linearly: $6.6M-20.6M per year.
 

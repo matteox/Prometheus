@@ -57,6 +57,18 @@ The data-model-vs-workflow principle, applied at the meta level:
 
 What survives is the data and the work. What doesn't survive is the human-shaped machinery around them.
 
+### A finer-grained taxonomy
+
+The data-model-vs-workflow binary is useful as a first pass, but it doesn't capture every case. Three categories work better than the simple split:
+
+**Tools uniformly human-shaped.** The relational database, the ticket system, the sprint — every layer is human-shaped. The data and the workflow are inseparable because the data model itself was designed for human browsing. For these tools, the entire abstraction needs to be redesigned or replaced, not just the workflow.
+
+**Tools uniformly abstract.** Git, language semantics, static type systems — the data model is genuinely post-human, and the workflow convention is the only thing that needs to change. For these tools, the binary distinction is trivially true: data survives, ceremony dies.
+
+**Tools genuinely mixed.** Email, documentation, the file system — data and workflow are interwoven. Email messages have attribution and timestamps (data that survives) but the inbox is also the data structure (workflow that doesn't). Documentation is prose (workflow) but also contains structured facts (data). The file system stores named blobs (data) but the hierarchy is part of the data model itself. For these tools, the binary is a useful fiction; the redesign has to treat both layers together.
+
+The series uses the binary as a heuristic — most of the time it's right, especially for distinguishing "redesign the workflow" from "redesign the data model." But the reader should know it's a heuristic, not a universal solvent. Some tools are uniformly human-shaped; some are uniformly abstract; some are mixed. The series gets more persuasive when it acknowledges which category each tool falls into.
+
 ## The connection to the first series
 
 The first series — [The Comfortable Cage](https://github.com/matteox/Comfortable-Cage) — argued that humans project organizational shapes onto AI reasoning, limiting it. The org chart, the SDLC, the role-based agent, the architecture review board — all are projections of human organizational cognition onto AI work.

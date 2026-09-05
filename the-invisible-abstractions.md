@@ -111,6 +111,22 @@ The deepest pattern: every AI system has to do translation work to fit into thes
 
 The translation work is invisible too. It's the per-inference overhead that every AI system pays to exist in a world built for humans. We don't measure it. We don't optimize it. We accept it as the cost of doing business.
 
+## Replacement vs. adapters
+
+A reasonable objection to the post so far: replacing the file system is multi-decade work. Replacing HTTP is generational work. Replacing the auth stack is institutional work measured in compliance and audit cycles. Replacing the document is a war against every office productivity vendor on earth. If the four abstractions above are so deeply embedded that they can't realistically be replaced, the post is making claims it can't cash.
+
+The objection is right. Not every invisible abstraction should be replaced. The honest answer is *migration layers, not replacement* — and the right answer varies by abstraction.
+
+**The file system** will exist for decades. The realistic near-term answer is a translation layer that exposes a semantic, content-addressed view on top of whatever file system is in use. `pgvector` and similar adapters are early examples — they don't replace Postgres, they expose a different access pattern through a layer. The AI sees the semantic view; the underlying file system continues to exist for human use. The translation tax is paid once at the layer, not on every operation.
+
+**The network protocol** is harder. HTTP is so fundamental that the realistic answer is not replacement but selective use. For internal AI-to-AI communication, use gRPC streaming, NATS, or pub/sub — bypass HTTP entirely. For AI-to-human and AI-to-external-system communication, HTTP remains the realistic answer; the tax is the cost of crossing the boundary. The trick is to minimize the crossings.
+
+**Authentication** is more replaceable than it looks. The auth stack exists to distinguish humans from each other; AI doesn't need that distinction. The realistic answer is capability-based access — the AI gets a capability token for the specific operations it needs, not a session token for "this human." The capability layer can sit on top of existing SSO/OAuth infrastructure; it doesn't require replacing it. The tax is paid once at the capability layer.
+
+**The document** is the hardest case. Office productivity software is a massive market with entrenched user expectations. The realistic answer is what Post 5 already gestured at: documents become *generated views* of structured knowledge, not stored artifacts. The source of truth is structured; the document is a rendering. This is the case where the abstraction *does* need to change at the data layer — but the rendering layer (Word, Google Docs, PDF) remains for human consumption.
+
+The pattern: most invisible abstractions need *better adapters*, not replacement. The AI sees a different view through a translation layer; the underlying abstraction continues to exist for the contexts where it's appropriate. The translation tax is paid once at the layer, not on every operation. The post's argument stands — the abstractions are AI-hostile in their native form — but the practical answer is migration layers that expose AI-native views on top of human-shaped substrates.
+
 ## The unspoken claim across the four
 
 These four abstractions are the most pervasive AI-hostile abstractions in computing, precisely because we don't notice them.

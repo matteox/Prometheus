@@ -44,6 +44,28 @@ The institutions of engineering management reproduce this loop:
 
 Each institution reinforces the others. Each is justified by reference to the others. The system is closed.
 
+## But the ladder might serve human career development
+
+A reasonable objection: maybe the ladder isn't feudal-in-a-bad-way. Maybe it's feudal-in-a-way-that-actually-works for what it was designed to do — human career development. From inside the institution, the mutual justification loop might be doing useful work:
+
+- Engineers get predictable career progression.
+- Compensation differences are justified and defensible.
+- Senior engineers have authority that comes with responsibility.
+- The ladder filters for competence over time (or claims to).
+- Engineers have something to work toward.
+
+The counter-evidence: organizations without formal ladders ship competitive software.
+
+- **Valve** operates without formal hierarchy. The employee handbook famously says the org chart is "none of your business." Employees self-organize around projects. The company ships games that compete with laddered studios.
+- **W.L. Gore & Associates** uses a "lattice" structure with no traditional management. The company has shipped products for decades and consistently ranks among the best places to work.
+- **Parts of open source** use function-based recognition (maintainer, contributor) without formal levels. Linux, Python, Kubernetes all compete with laddered commercial organizations.
+
+These are experiments, not definitive proof. The counter-objection remains: maybe ladders work *better* than these alternatives, just with different trade-offs. The post doesn't claim otherwise.
+
+The claim is narrower: **for AI-augmented teams specifically, the priority should flip.** The ladder might be net-positive for *purely human* teams whose primary goal is human career development. For AI-augmented teams whose primary goal is AI-augmented productivity, the calculus changes. The ladder's functions (career progression, compensation, identity) still exist, but they're no longer the primary goal. They're secondary to productivity.
+
+When productivity is the primary goal and the ladder is in the way, the priority flips. The post argues for AI-augmented teams. The argument might not extend to purely human teams — and that's okay. The argument is that for teams whose value comes from AI-augmented output, the institutional infrastructure should optimize for that output, not for human career development as a primary concern.
+
 ## Hiring, performance review, promotion
 
 Three institutions that explicitly carry the feudal structure:
