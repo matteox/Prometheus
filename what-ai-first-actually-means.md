@@ -110,10 +110,10 @@ The principle is harder than the sketch. The sketch is an architectural pattern;
 
 That's the work. It's not a research problem. It's not a tooling problem. It's an institutional problem, played out at every layer of the computing stack, over years, against institutions that benefit from the current shape.
 
-The catalog of ten posts is the map of where the work needs to happen. The principle is the orientation for doing it. The first series is the parallel argument at the reasoning layer.
+The catalog of eleven posts is the map of where the work needs to happen. The principle is the orientation for doing it. The first series is the parallel argument at the reasoning layer.
 
 Two series, one trap, two sketches of escape. The rest is execution.
 
 ---
 
-*This is the close of the series. The catalog and the principle together form the argument. The first series — [The Comfortable Cage](https://github.com/matteox/Comfortable-Cage) — is the companion piece, making the same argument at the reasoning layer. Together they describe the cage and sketch what it would take to leave it.*
+*This post articulates the principle. The constructive counterpart — [Post 12 — Beyond the Tool Stack](./beyond-the-tool-stack.md) — sketches what the alternative looks like as a coherent system. Together, the principle and the destination close the series. The first series — [The Comfortable Cage](https://github.com/matteox/Comfortable-Cage) — is the companion piece, making the same argument at the reasoning layer. Three posts total: principle, destination, execution.*

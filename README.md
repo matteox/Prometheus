@@ -27,7 +27,8 @@ The series is meant to be read in order. Post 0 anchors the frame; Posts 1–11 
 | 8 | [The Languages Won't Change, But the Tooling Will](./the-languages-wont-change.md) | Programming languages. The second-cleanest case. Language semantics survive; the IDE, build system, and debugger don't. |
 | 9 | [The Feudal System](./the-feudal-system.md) | Engineering ladder. The most uncomfortable post. Hiring, performance review, promotion — all human-cognition-shaped, all defended by the people they benefit. |
 | 10 | [The Invisible Abstractions](./the-invisible-abstractions.md) | File system, network, auth, documents. The abstractions so foundational we don't see them as tools. The most pervasive AI-hostile layer of the stack. |
-| 11 | [What "AI-First" Actually Means](./what-ai-first-actually-means.md) | Closing. The design principle that ties the catalog together: *serve the work, not the worker's cognition*. |
+| 11 | [What "AI-First" Actually Means](./what-ai-first-actually-means.md) | The design principle that ties the catalog together: *serve the work, not the worker's cognition*. The abstract statement; the constructive case follows in Post 12. |
+| 12 | [Beyond the Tool Stack](./beyond-the-tool-stack.md) | The constructive counterpart. What the optimal AI-first stack looks like as a coherent system — five layers (knowledge, state, identity, process, reasoning), how they compose, the migration path, and what to do today. |
 
 Plus one reference post: **[The Translation Tax](./the-translation-tax.md)** — the quantitative companion. Token and dollar costs of fitting AI into human-shaped infrastructure, with per-tool breakdown and aggregate estimates. Call out from any post where the cost of the status quo matters.
 
@@ -68,7 +69,8 @@ Every claim is an argument, not a finding. The series is intended to start discu
 8   Languages — the second-cleanest case
 9   Engineering ladder — the feudal system
 10  Invisible abstractions — file system, network, auth, documents
-11  Closing — what AI-first actually means
+11  The principle — serve the work, not the worker's cognition
+12  The destination — beyond the tool stack (constructive counterpart)
 
 +   The Translation Tax (quantitative reference)
 ```
