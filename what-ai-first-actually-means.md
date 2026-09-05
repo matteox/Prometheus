@@ -49,10 +49,10 @@ The series ends where it began. The tools are inherited from human cognition. Th
 
 The first series offered an architectural sketch — the shared workspace. This one offers a design discipline — serve the work. The sketch can be implemented once; the discipline has to be applied, again and again, at every layer, against institutions that benefit from the current shape. That isn't a research problem or a tooling problem. It's an institutional one, played out over years.
 
-Two series, one trap, two sketches of escape. The rest is execution.
+Two series, one trap, two sketches of escape. The next post puts the sketches together into a building.
 
 *Faster horse? That's the question. Keep asking it.*
 
 ---
 
-*Previous: [Post 3 — The Data Shapes](./the-data-shapes.md) · Series index: [README](./README.md)*
+*Previous: [Post 3 — The Data Shapes](./the-data-shapes.md) · Next: [Post 5 — Leaving the Cage](./leaving-the-cage.md)*

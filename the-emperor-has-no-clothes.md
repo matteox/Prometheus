@@ -1,19 +1,12 @@
 # The Emperor Has No Clothes
 
-*Post 0 of Prometheus, a five-post series on the tools that shape AI work. Companion to [The Comfortable Cage](https://github.com/matteox/Comfortable-Cage), which makes the parallel argument at the reasoning layer.*
+*Post 0 of Prometheus, a six-post series on the tools that shape AI work. Companion to [The Comfortable Cage](https://github.com/matteox/Comfortable-Cage), which makes the parallel argument at the reasoning layer.*
 
 ---
 
-> "If I had asked people what they wanted, they would have said faster horses."
-> — Henry Ford
+The first series opened with a quote Henry Ford never said. It sounded right, nobody checked, and by the end of that series the reader had one question to carry: *is this just a faster horse?*
 
-It's a great line. The kind of thing you'd expect from a man who bet his company on an idea nobody asked for and turned out to be right.
-
-No record he ever said it exists. Not in his own writing, not in any interview, not in the Ford Museum's collection of two hundred-plus verified quotes. It started in 1999 as one man's guess about what Ford's customers might have said. By 2006, Ford's own great-grandson was repeating it as something his great-grandfather actually said.
-
-Sounds good, though.
-
-Hold on to that feeling — the one where something sounds right and you'd rather not check. This series is about tools that sound right.
+Keep carrying it. This series is about tools that sound right.
 
 ## The claim
 
@@ -40,7 +33,7 @@ Applied across the stack, the tools sort into three piles, and the piles are the
 | The tool exists for human anxiety, visibility, or status | Sprints, code review, ticket state machines, the engineering ladder | [2 — The Rituals](./the-rituals.md) |
 | The data model itself is shaped by how humans browse, read, and file | Databases, email, documentation, and the invisible layer — file system, network, auth, documents | [3 — The Data Shapes](./the-data-shapes.md) |
 
-[Post 4](./what-ai-first-actually-means.md) closes with the design principle the three verdicts share.
+[Post 4](./what-ai-first-actually-means.md) states the design principle the three verdicts share, and [Post 5](./leaving-the-cage.md) draws the architecture that follows from it.
 
 One caveat, stated once so it needn't be repeated: none of the AI-first alternatives sketched here exist as a product you can buy today. The pieces exist. The assembly is engineering, not research. Timelines are guesses, and this series won't pretend otherwise.
 

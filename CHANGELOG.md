@@ -127,3 +127,19 @@ a one-line pointer to their new home if inbound links matter.
   consistently, not softened.
 - The series' explicit self-description as argument rather than finding is
   preserved in Post 0 and the README.
+
+## Addition — Post 5, Leaving the Cage
+
+Both series ended on diagnosis ("the rest is execution"). A capstone post
+now closes them constructively: an AI-first architecture assembled from the
+pieces both series argued for, in five layers (knowledge, reasoning,
+coordination, legibility, humans), with an ASCII layer diagram, a worked
+example contrasting the SDLC pipeline and the AI-first flow on the same
+feature request, an explicit "what's not solved" list carried over from
+both series, six independently reversible first moves, and a closing that
+applies the faster-horse test to the architecture itself.
+
+Wired in: Prometheus README (now six posts), Post 0's method section, Post
+4's closing line and nav; Comfortable Cage README and Part 5's end-of-series
+line both point to it. No claims in the capstone are new — every component
+is one already argued for in a prior post; the capstone only assembles them.
