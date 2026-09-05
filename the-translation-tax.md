@@ -4,13 +4,15 @@
 
 ---
 
+**This post is an empirical agenda, not a budget claim.**
+
 Every AI system pays a translation tax. It pays to convert structured reasoning into a file the file system will store. It pays to wrap a tool call in JSON schema the API requires. It pays to read a PDF a human wrote for human eyes. It pays to receive an email reply that's 80% quoted text from a thread the model already saw. Every translation is lossy. Every translation is slow. Every translation costs tokens we don't measure and dollars we don't budget for.
 
-This post catalogs the tax across the stack — tool by tool, with concrete numbers. The argument across the series is qualitative: human-cognition-shaped tools limit what AI can do. This post is the quantitative companion: *here is what the limit costs you.*
+This post is the quantitative companion to the qualitative argument across the Prometheus series. The numbers that follow are *illustrative, not measured*: order-of-magnitude estimates derived from observed overhead patterns (PDFs really do carry 2-3× the tokens of equivalent plain text; email threads really do re-quote prior messages; JSON schemas really do inject hundreds of tokens per call) and from rough tool-mix assumptions. The ratios are roughly right; the absolute dollars should be treated as research hypotheses to test, not budget figures.
 
-The numbers below assume current API pricing (~$5 per million input tokens, ~$15 per million output tokens). Adjust for your model and provider — the ratios are what matter, not the absolute dollars.
+To convert illustrative to measured: instrument a real deployment. Record actual token consumption per operation across the tool stack. Compare to a counterfactual where the AI works directly on AI-native data structures. Publish the data. That's the empirical work this post is gesturing at — and the work that would actually settle the argument.
 
-**A caveat about methodology.** The numbers in this post are *illustrative, not measured*. They are derived from observed overhead patterns (PDFs really do carry 2-3× the tokens of equivalent plain text; email threads really do re-quote prior messages; JSON schemas really do inject hundreds of tokens per call) and from rough estimates of typical volume and tool mix. The *ratios* are roughly right; the *absolute dollars* should be treated as order-of-magnitude estimates, not budget figures. To convert this from illustrative to measured, instrument a real deployment and record actual token consumption per operation across the tool stack. That's the empirical work this post gestures at — and a critique correctly observed that the per-tool tables are where the overreach lives, while the compounded-task example is more defensible.
+The numbers below assume current API pricing (~$5 per million input tokens, ~$15 per million output tokens). Adjust for your model and provider. The per-tool breakdowns are deliberately presented as ranges; the compounded-task example is the most defensible illustration. Each should be read as a hypothesis to test, not a number to budget against.
 
 ## Per-tool cost breakdown
 

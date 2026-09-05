@@ -24,7 +24,7 @@ But notice what the model optimizes *for*:
 
 **Indexes are for key-based lookup.** B-tree indexes optimize for "find the row where column X = Y." AI retrieves by meaning, not by key. The fastest index in the world doesn't help if your query is "find me everything semantically related to this concept."
 
-**ACID guarantees are for human-observed consistency.** Atomicity, consistency, isolation, durability — these properties protect humans from seeing partial updates and stale reads. AI doesn't observe consistency the way humans do. It can reason about staleness at inference time and decide whether the version of the data it has is good enough.
+**Transactional guarantees are partly cognitive, partly correctness.** The I in ACID (isolation) protects against humans reasoning about concurrent states that their cognitive model can't hold. AI doesn't need this cognitive simplification. But the A (atomicity), C (consistency), and D (durability) protect against write-time correctness failures — double-booking, double-spending, lost updates under concurrent writes. These problems don't disappear because the actor is AI; if anything, they're more acute, because AI agents run faster and in parallel without the kind of coordination humans naturally apply. AI doesn't need *less* transactional guarantee; it needs *different* transactional guarantee — possibly stronger, with semantics tuned for AI's actual concurrency patterns. The relational model isn't wrong about needing transactions; it's wrong about what concurrency semantics those transactions should have.
 
 The relational model is a particular answer to "how should data be organized for retrieval?" The answer was tuned for human cognition. It works extremely well for that case. It is not the only possible answer, and it is not the right answer for AI.
 
@@ -38,7 +38,7 @@ If we strip away the human-cognition optimizations, what survives?
 
 **Reasoning across structure, not against it.** AI agents reason *across* data, not *against* it. They don't execute a query; they think about what's in the data. The data store should make relationships explicit and traversable as primitives, not require the agent to construct them at query time.
 
-**Eventual consistency with provenance.** AI agents don't have a human in the loop who gets confused by a temporary inconsistency. They can reason about consistency at inference time. What they need is provenance — knowing which version of a fact came from where, when, and why — not the strict atomicity that ACID provides.
+**Eventual consistency with provenance, alongside transactional guarantees where they matter.** AI agents don't have a human in the loop who gets confused by a temporary inconsistency in *reads* — they can reason about staleness at inference time. But write-time correctness still requires transactions. Two AI agents writing to the same record without coordination will produce the same lost-update bugs as two humans. The AI-first equivalent isn't "no transactions" — it's transactions tuned for AI's actual concurrency patterns, plus provenance for everything (knowing which version of a fact came from where, when, and why).
 
 These are different requirements than the relational model was built for. They are not impossible to satisfy with a relational database — Postgres with `pgvector` is a perfectly reasonable implementation choice today, and many AI-first systems use exactly that. But the *default* — the assumption that you start a new project with a relational database and only deviate if you have specific non-relational needs — that default is doing a lot of work, and most of it is human-shaped.
 
@@ -81,7 +81,7 @@ The data-model-vs-workflow distinction (a carryover from the first series) is us
 - Schemas as planning artifacts (AI plans at inference time, can infer structure)
 - Tables as human-browsable representations (the model reasons across data, not against tabular dumps)
 - Joins as the primary composition mechanism (semantic retrieval and graph traversal replace this)
-- ACID as the default consistency model (eventual consistency with provenance is what AI needs)
+- ACID as the default consistency model (eventual consistency with provenance is what AI needs for reads; transactions tuned for AI concurrency are what it needs for writes)
 - Indexes as the primary retrieval mechanism (embedding-based retrieval is what AI uses)
 - ORMs as the impedance-mismatch layer (because there shouldn't be impedance if the model is right)
 
@@ -107,4 +107,4 @@ The relational data model survives, transformed. The relational workflow doesn't
 
 ---
 
-*Next: [Post 2 — Email](#) — the original hand-off architecture. The most entrenched communication tool in human history, and the most obviously wrong shape for AI.*
+*Next: [Post 2 — Email](./the-inbox-that-eats-everything.md) — the original hand-off architecture. The most entrenched communication tool in human history, and the most obviously wrong shape for AI.*

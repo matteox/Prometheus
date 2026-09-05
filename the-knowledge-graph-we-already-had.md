@@ -43,8 +43,6 @@ The flattening happened for human-browsing reasons. Prose is what humans read. H
 
 AI doesn't read prose the way humans do. AI ingests — it takes the whole document, all at once, into context. The hierarchy doesn't help. The prose doesn't help. The lost structure hurts, because AI would benefit from the original structure more than humans benefit from the prose.
 
-The unspoken claim — and this is the one to land without stating:
-
 > **Every Confluence space is a knowledge graph someone flattened into prose for human browsing. The flattening lost information.**
 
 The original information had structure. The org threw the structure away because humans read prose. Now the org has prose that humans occasionally browse and AI occasionally ingests, and neither the structure nor the prose is doing its job well.
@@ -99,9 +97,7 @@ A real AI-first knowledge system would combine:
 
 This doesn't exist as a packaged product. The pieces exist and are well-understood. We're maybe three to five years from a credible open-source implementation, and the category is currently a research area for several teams.
 
-## The unspoken claim
-
-Every Confluence space is a knowledge graph someone flattened into prose for human browsing. The flattening lost information. AI doesn't browse, so the flattening serves no one.
+## Why the flattening persists
 
 The institutional reasons the flattening persists:
 

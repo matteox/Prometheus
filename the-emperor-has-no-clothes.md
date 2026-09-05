@@ -41,7 +41,7 @@ The posts that follow name what everyone knows. Each one is uncomfortable in a s
 
 ## The analytical framework
 
-Every post in this series applies the same analytical move to a different tool. The move has three steps, developed and refined through the talking-points work:
+Every post in this series applies the same analytical move to a different tool. The move has three steps:
 
 **Step 1 — State the need.** What problem does the tool serve? Not the tool's stated purpose — the underlying need.
 

@@ -1,6 +1,6 @@
 # The State Machine That Wasn't Needed
 
-*Post 6 of a new series on the tools that shape AI work. [Post 1](./the-relational-cage.md) — databases. [Post 2](./the-inbox-that-eats-eats-everything.md) — email. [Post 3](./the-sprint-that-wasnt-needed.md) — sprints. [Post 4](./the-code-review-ceremony.md) — code review. [Post 5](./the-knowledge-graph-we-already-had.md) — documentation. This post tackles the work tracking system that defines how modern software organizations see themselves: the ticket.*
+*Post 6 of a new series on the tools that shape AI work. [Post 1](./the-relational-cage.md) — databases. [Post 2](./the-inbox-that-eats-everything.md) — email. [Post 3](./the-sprint-that-wasnt-needed.md) — sprints. [Post 4](./the-code-review-ceremony.md) — code review. [Post 5](./the-knowledge-graph-we-already-had.md) — documentation. This post tackles the work tracking system that defines how modern software organizations see themselves: the ticket.*
 
 ---
 
